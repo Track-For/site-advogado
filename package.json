@@ -1,0 +1,29 @@
+{
+  "name": "sites-project",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit -p tsconfig.app.json && tsc --noEmit -p tsconfig.node.json && vite-ssg build && node scripts/prepare-sites-build.mjs",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@lucide/vue": "^1.33.0",
+    "@unhead/vue": "^2.1.17",
+    "vite-ssg": "^28.3.0",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@openai/sites-vite-plugin": "^0.1.0 || ^0.2.0",
+    "@types/node": "22.19.19",
+    "@vitejs/plugin-vue": "^6.0.1",
+    "typescript": "5.9.3",
+    "vite": "^8.2.2",
+    "vue-tsc": "^3.0.8"
+  },
+  "type": "module"
+}

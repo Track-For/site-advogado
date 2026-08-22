@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://auroratattoo.com.br/sitemap.xml

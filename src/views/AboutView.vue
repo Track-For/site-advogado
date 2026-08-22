@@ -1,58 +1,57 @@
 <script setup lang="ts">
-import { ArrowUpRight, Eye, Heart, ShieldCheck } from '@lucide/vue';
+import { ArrowUpRight, Eye, MessageSquareText, Scale, ShieldCheck } from '@lucide/vue';
 import { useHead } from '@unhead/vue';
 import { siteConfig, whatsappUrl } from '../data/site';
 
 useHead({
-  title: 'Sobre o Atelier | Aurora Tattoo Atelier',
+  title: 'O Escritório | Almeida & Prado Advocacia',
   meta: [
-    { name: 'description', content: 'Conheça a história, a missão e o processo criativo do Aurora Tattoo Atelier, estúdio de tatuagem autoral na Vila Madalena, São Paulo.' },
-    { property: 'og:title', content: 'Sobre o Aurora Tattoo Atelier' },
-    { property: 'og:description', content: 'Um atelier onde técnica, escuta e expressão pessoal caminham juntas.' },
+    { name: 'description', content: 'Conheça a forma de atuação do Almeida & Prado: advocacia próxima, estratégica e comprometida com decisões claras.' },
+    { property: 'og:title', content: 'O Escritório | Almeida & Prado Advocacia' },
+    { property: 'og:description', content: 'Estratégia jurídica com escuta, clareza e responsabilidade.' },
     { property: 'og:url', content: `${siteConfig.domain}/sobre` },
-    { name: 'twitter:title', content: 'Sobre o Aurora Tattoo Atelier' },
-    { name: 'twitter:description', content: 'Um atelier onde técnica, escuta e expressão pessoal caminham juntas.' },
   ],
   link: [{ rel: 'canonical', href: `${siteConfig.domain}/sobre` }],
 });
 
 const values = [
-  { icon: Eye, title: 'Escuta atenta', text: 'A criação começa entendendo o que a imagem significa para você.' },
-  { icon: Heart, title: 'Respeito ao corpo', text: 'Desenhamos para a anatomia, o movimento e o tempo de cada pessoa.' },
-  { icon: ShieldCheck, title: 'Cuidado radical', text: 'Segurança, higiene e transparência são parte essencial da arte.' },
+  { icon: Eye, title: 'Visão completa', text: 'Nenhuma questão jurídica existe isoladamente. Consideramos o contexto humano, financeiro e empresarial.' },
+  { icon: MessageSquareText, title: 'Linguagem clara', text: 'Explicamos cenários, riscos e alternativas sem transformar complexidade em distância.' },
+  { icon: ShieldCheck, title: 'Responsabilidade', text: 'Atuação técnica, confidencial e realista, sem promessas de resultado ou respostas prontas.' },
 ];
 </script>
 
 <template>
   <section class="inner-hero about-hero">
+    <div class="inner-hero-mark" aria-hidden="true">AP</div>
     <div class="container-wide inner-hero-grid">
       <div>
-        <p class="eyebrow">O atelier</p>
-        <h1>Nada aqui<br /><em>nasce pronto.</em></h1>
+        <p class="eyebrow">O escritório</p>
+        <h1>Estratégia jurídica<br />com <em>presença.</em></h1>
       </div>
-      <p>O Aurora é um espaço de criação autoral, cuidado e expressão — feito para que cada pessoa viva a tatuagem como um encontro consigo.</p>
+      <p>Um escritório construído para transformar temas complexos em decisões conscientes, com proximidade e rigor técnico.</p>
     </div>
   </section>
 
   <section class="story-section container-wide">
-    <figure class="story-image">
-      <img src="/images/artist-portrait.jpg" width="900" height="1100" alt="Artista do Aurora Tattoo Atelier em seu processo criativo" />
-      <figcaption>Alex Nunes · Artista residente</figcaption>
-    </figure>
+    <div class="story-seal" aria-hidden="true">
+      <Scale :size="64" :stroke-width="1" />
+      <strong>A&P</strong>
+      <span>Advocacia estratégica</span>
+    </div>
     <div class="story-copy">
-      <p class="eyebrow">Nossa história</p>
-      <h2>Primeiro a escuta.<br />Depois, a <em>agulha.</em></h2>
-      <p class="large-copy">Tudo começou em 2017, com uma mesa de desenho, uma máquina e a convicção de que tatuar poderia ser um processo mais cuidadoso.</p>
-      <p>Depois de anos trabalhando em estúdios compartilhados, o Aurora abriu as portas na Vila Madalena para receber menos projetos por dia e dedicar mais atenção a cada um deles.</p>
-      <p>O atelier cresceu sem perder a essência: escutar antes de desenhar, explicar antes de executar e acompanhar mesmo depois que a sessão termina.</p>
-      <div class="signature">Alex Nunes <span>Fundador & artista</span></div>
+      <p class="eyebrow">Nossa visão</p>
+      <h2>Direito não é só resposta.<br />É direção.</h2>
+      <p class="large-copy">O Almeida & Prado nasceu de uma convicção simples: um bom trabalho jurídico precisa ser tecnicamente sólido e compreensível para quem toma a decisão.</p>
+      <p>Por isso, começamos pela escuta. Antes de apontar caminhos, entendemos relações, prioridades, prazos e riscos. A estratégia surge desse contexto — não de uma fórmula.</p>
+      <p>Atuamos de forma consultiva e contenciosa, acompanhando pessoas, famílias e empresas em decisões que exigem segurança, discrição e visão de longo prazo.</p>
     </div>
   </section>
 
   <section class="mission-section">
     <div class="mission-copy container-wide">
-      <p class="eyebrow">Nossa missão</p>
-      <h2>Marcar a pele sem apagar a pessoa.</h2>
+      <p class="eyebrow">O que nos orienta</p>
+      <h2>Menos formalidade vazia.<br />Mais <em>entendimento.</em></h2>
     </div>
     <div class="values-grid container-wide">
       <article v-for="(value, index) in values" :key="value.title">
@@ -64,32 +63,27 @@ const values = [
     </div>
   </section>
 
-  <section class="studio-section">
-    <div class="studio-copy">
-      <p class="eyebrow">Nosso espaço</p>
-      <h2>Sem plateia.<br />Sem pressa.</h2>
-      <p>Um estúdio reservado, pensado para acolher uma pessoa por vez. Luz confortável, equipamentos profissionais e tudo preparado para você viver a sessão com tranquilidade.</p>
+  <section class="approach-section container-wide">
+    <div class="approach-heading">
+      <p class="eyebrow">Atendimento</p>
+      <h2>Próximo quando importa.<br />Objetivo sempre.</h2>
+    </div>
+    <div class="approach-content">
+      <p>Você fala diretamente com quem analisa e conduz seu caso. A cada etapa relevante, recebe contexto suficiente para decidir com segurança.</p>
       <ul>
-        <li><span>01</span> Atendimento exclusivamente com hora marcada</li>
-        <li><span>02</span> Materiais descartáveis e esterilização certificada</li>
-        <li><span>03</span> Fácil acesso na Vila Madalena, São Paulo</li>
+        <li><span>01</span> Atendimento presencial em São Paulo</li>
+        <li><span>02</span> Consultas online em todo o Brasil</li>
+        <li><span>03</span> Comunicação clara sobre escopo, prazos e honorários</li>
+        <li><span>04</span> Sigilo e proteção das informações compartilhadas</li>
       </ul>
     </div>
-    <img src="/images/studio-detail.jpg" width="1100" height="900" alt="Ambiente acolhedor e profissional do atelier de tatuagem" loading="lazy" />
-  </section>
-
-  <section class="numbers-section container-wide" aria-label="Números do Aurora Tattoo Atelier">
-    <div><strong>8+</strong><span>anos dedicados à tatuagem</span></div>
-    <div><strong>600+</strong><span>projetos realizados</span></div>
-    <div><strong>5.0</strong><span>média de avaliação</span></div>
-    <div><strong>1:1</strong><span>atendimento individual</span></div>
   </section>
 
   <section class="page-cta">
     <div>
       <p class="eyebrow">Vamos conversar?</p>
-      <h2>Sua história já existe.<br />Falta dar <em>forma.</em></h2>
-      <a class="button button-light" :href="whatsappUrl()" target="_blank" rel="noopener">Compartilhe sua ideia <ArrowUpRight :size="18" /></a>
+      <h2>Entenda suas opções<br />antes de <em>decidir.</em></h2>
+      <a class="button button-light" :href="whatsappUrl()" target="_blank" rel="noopener">Agendar atendimento <ArrowUpRight :size="18" /></a>
     </div>
   </section>
 </template>

@@ -1,18 +1,16 @@
-// Edite este arquivo para trocar rapidamente os dados reais do tatuador.
+// Centralize os dados reais do escritório neste arquivo antes da publicação.
 export const siteConfig = {
-  name: 'Aurora Tattoo Atelier',
-  shortName: 'Aurora',
-  // Ao conectar um domínio próprio, atualize esta URL e os arquivos de SEO em public/.
-  domain: 'https://aurora-tattoo-atelier.luizfhellippe.chatgpt.site',
-  email: 'contato@auroratattoo.com.br',
+  name: 'Almeida & Prado Advocacia',
+  shortName: 'Almeida & Prado',
+  domain: 'https://almeida-prado-advocacia.luizfhellippe.chatgpt.site',
+  email: 'contato@almeidaprado.adv.br',
   phoneLabel: '(11) 99999-9999',
-  // Substitua pelo número real com DDI + DDD, apenas dígitos.
   whatsappDigits: '5511999999999',
-  instagramHandle: '@aurora.tattoo',
-  instagramUrl: 'https://instagram.com/aurora.tattoo',
-  location: 'Vila Madalena · São Paulo, SP',
-  address: 'Vila Madalena, São Paulo — SP',
+  instagramHandle: '@almeidaprado.adv',
+  instagramUrl: 'https://instagram.com/almeidaprado.adv',
+  location: 'São Paulo · Atendimento nacional',
+  address: 'Av. Paulista, São Paulo — SP',
 };
 
-export const whatsappUrl = (message = 'Olá! Gostaria de conversar sobre uma tatuagem.') =>
+export const whatsappUrl = (message = 'Olá! Gostaria de agendar uma conversa com um advogado.') =>
   `https://wa.me/${siteConfig.whatsappDigits}?text=${encodeURIComponent(message)}`;

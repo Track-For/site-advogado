@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://aurora-tattoo-atelier.luizfhellippe.chatgpt.site/sitemap.xml
+Sitemap: https://almeida-prado-advocacia.luizfhellippe.chatgpt.site/sitemap.xml

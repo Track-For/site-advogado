@@ -2,7 +2,8 @@
 export const siteConfig = {
   name: 'Aurora Tattoo Atelier',
   shortName: 'Aurora',
-  domain: 'https://auroratattoo.com.br',
+  // Ao conectar um domínio próprio, atualize esta URL e os arquivos de SEO em public/.
+  domain: 'https://aurora-tattoo-atelier.luizfhellippe.chatgpt.site',
   email: 'contato@auroratattoo.com.br',
   phoneLabel: '(11) 99999-9999',
   // Substitua pelo número real com DDI + DDD, apenas dígitos.

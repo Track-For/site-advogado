@@ -37,7 +37,7 @@ const sessionIncludes = [
     <div class="container-wide inner-hero-grid">
       <div>
         <p class="eyebrow">Serviços</p>
-        <h1>Estilos diferentes.<br /><em>O mesmo cuidado.</em></h1>
+        <h1>Escolha o idioma.<br /><em>A gente cria a voz.</em></h1>
       </div>
       <p>Escolha um ponto de partida. A partir dele, construímos uma linguagem visual única para o que você quer expressar.</p>
     </div>
@@ -61,7 +61,7 @@ const sessionIncludes = [
     <div class="included-layout container-wide">
       <div>
         <p class="eyebrow">Em toda sessão</p>
-        <h2>O cuidado já<br />está <em>incluído.</em></h2>
+        <h2>O invisível também<br />faz parte da <em>obra.</em></h2>
         <p>Você não contrata apenas o tempo de máquina. Todo projeto inclui pesquisa, desenho e acompanhamento.</p>
       </div>
       <ul>
@@ -85,7 +85,7 @@ const sessionIncludes = [
   <section class="page-cta page-cta-accent">
     <div>
       <p class="eyebrow">Seu próximo projeto</p>
-      <h2>Qual história você<br />quer <em>carregar?</em></h2>
+      <h2>O que merece<br />virar <em>marca?</em></h2>
       <a class="button button-light" :href="whatsappUrl()" target="_blank" rel="noopener">Conversar no WhatsApp <ArrowUpRight :size="18" /></a>
     </div>
   </section>

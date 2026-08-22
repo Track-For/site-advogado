@@ -28,7 +28,7 @@ const values = [
     <div class="container-wide inner-hero-grid">
       <div>
         <p class="eyebrow">O atelier</p>
-        <h1>Traço com técnica.<br /><em>Presença com propósito.</em></h1>
+        <h1>Nada aqui<br /><em>nasce pronto.</em></h1>
       </div>
       <p>O Aurora é um espaço de criação autoral, cuidado e expressão — feito para que cada pessoa viva a tatuagem como um encontro consigo.</p>
     </div>
@@ -41,7 +41,7 @@ const values = [
     </figure>
     <div class="story-copy">
       <p class="eyebrow">Nossa história</p>
-      <h2>Um lugar para criar<br />sem <em>automatismos.</em></h2>
+      <h2>Primeiro a escuta.<br />Depois, a <em>agulha.</em></h2>
       <p class="large-copy">Tudo começou em 2017, com uma mesa de desenho, uma máquina e a convicção de que tatuar poderia ser um processo mais cuidadoso.</p>
       <p>Depois de anos trabalhando em estúdios compartilhados, o Aurora abriu as portas na Vila Madalena para receber menos projetos por dia e dedicar mais atenção a cada um deles.</p>
       <p>O atelier cresceu sem perder a essência: escutar antes de desenhar, explicar antes de executar e acompanhar mesmo depois que a sessão termina.</p>
@@ -52,7 +52,7 @@ const values = [
   <section class="mission-section">
     <div class="mission-copy container-wide">
       <p class="eyebrow">Nossa missão</p>
-      <h2>Transformar histórias em arte viva, com respeito ao corpo e verdade no processo.</h2>
+      <h2>Marcar a pele sem apagar a pessoa.</h2>
     </div>
     <div class="values-grid container-wide">
       <article v-for="(value, index) in values" :key="value.title">
@@ -67,7 +67,7 @@ const values = [
   <section class="studio-section">
     <div class="studio-copy">
       <p class="eyebrow">Nosso espaço</p>
-      <h2>Privacidade, calma<br />e boas conversas.</h2>
+      <h2>Sem plateia.<br />Sem pressa.</h2>
       <p>Um estúdio reservado, pensado para acolher uma pessoa por vez. Luz confortável, equipamentos profissionais e tudo preparado para você viver a sessão com tranquilidade.</p>
       <ul>
         <li><span>01</span> Atendimento exclusivamente com hora marcada</li>
@@ -88,7 +88,7 @@ const values = [
   <section class="page-cta">
     <div>
       <p class="eyebrow">Vamos conversar?</p>
-      <h2>Tem uma história<br />pedindo <em>forma?</em></h2>
+      <h2>Sua história já existe.<br />Falta dar <em>forma.</em></h2>
       <a class="button button-light" :href="whatsappUrl()" target="_blank" rel="noopener">Compartilhe sua ideia <ArrowUpRight :size="18" /></a>
     </div>
   </section>

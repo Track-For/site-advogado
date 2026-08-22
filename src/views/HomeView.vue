@@ -8,8 +8,8 @@ useHead({
   title: 'Aurora Tattoo Atelier | Tatuagens autorais em São Paulo',
   meta: [
     { name: 'description', content: 'Tatuagens autorais, fine line e blackwork na Vila Madalena, em São Paulo. Conheça o portfólio do Aurora Tattoo Atelier e solicite seu orçamento.' },
-    { property: 'og:title', content: 'Aurora Tattoo Atelier | Arte que você leva na pele' },
-    { property: 'og:description', content: 'Projetos autorais, atendimento individual e um processo seguro do desenho à cicatrização.' },
+    { property: 'og:title', content: 'Aurora Tattoo Atelier | Sua pele não é rascunho' },
+    { property: 'og:description', content: 'Tatuagem autoral sem cópia, sem fórmula pronta e com um processo feito para a sua história.' },
     { property: 'og:url', content: siteConfig.domain },
   ],
   link: [{ rel: 'canonical', href: siteConfig.domain }],
@@ -40,23 +40,33 @@ const faqs = [
 </script>
 
 <template>
-  <!-- HERO: mensagem principal e conversão -->
+  <!-- HERO: direção editorial underground, com alto contraste e tipografia monumental -->
   <section class="hero">
+    <div class="hero-index" aria-hidden="true">A—01</div>
+    <div class="hero-rail" aria-hidden="true">VILA MADALENA · SP · BRASIL · DESDE 2017</div>
+
     <div class="hero-copy">
-      <p class="eyebrow">Tatuagem autoral · São Paulo</p>
-      <h1>Arte que você<br />leva na <em>pele.</em></h1>
-      <p class="hero-lead">Projetos exclusivos, criados para traduzir sua história em linhas, formas e presença.</p>
+      <p class="eyebrow"><span aria-hidden="true">◆</span> Tatuagem autoral · São Paulo</p>
+      <h1><span>Sua pele</span><span>não é</span><em>rascunho.</em></h1>
+      <p class="hero-lead">Não tatuamos tendências. Criamos símbolos que só fazem sentido em uma pele: <strong>a sua.</strong></p>
       <div class="hero-actions">
         <a class="button button-primary" :href="whatsappUrl()" target="_blank" rel="noopener">
-          Quero criar meu projeto <ArrowUpRight :size="18" aria-hidden="true" />
+          Marcar uma ideia <ArrowUpRight :size="18" aria-hidden="true" />
         </a>
-        <a class="text-link text-link-light" href="#trabalhos">Ver portfólio <span aria-hidden="true">↓</span></a>
+        <a class="text-link text-link-light" href="#trabalhos">Explorar trabalhos <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero-manifesto" aria-label="Manifesto do atelier">
+        <span>Feito uma vez.</span>
+        <strong>Carregado sempre.</strong>
       </div>
     </div>
 
     <figure class="hero-visual">
-      <img src="/images/hero-tattoo.jpg" width="900" height="1200" alt="Tatuador trabalhando com precisão em um projeto autoral" fetchpriority="high" />
-      <figcaption><span>01 — 04</span><span>Processo & precisão</span></figcaption>
+      <div class="hero-image-frame">
+        <img src="/images/hero-tattoo.jpg" width="900" height="1200" alt="Tatuador trabalhando com precisão em um projeto autoral" fetchpriority="high" />
+      </div>
+      <figcaption><span>TRABALHO / 001</span><span>Processo & precisão</span></figcaption>
+      <div class="hero-stamp" aria-hidden="true"><strong>100%</strong><span>autoral<br />sem cópia</span></div>
     </figure>
 
     <div class="hero-proof" aria-label="Destaques do atelier">
@@ -67,7 +77,7 @@ const faqs = [
   </section>
 
   <div class="ticker" aria-hidden="true">
-    <div>Fine line <span>✦</span> Blackwork <span>✦</span> Autoral <span>✦</span> Cover-up <span>✦</span> Fine line <span>✦</span> Blackwork <span>✦</span> Autoral <span>✦</span></div>
+    <div>Sem cópia <span>✦</span> Fine line <span>✦</span> Blackwork <span>✦</span> Feito em SP <span>✦</span> Sem cópia <span>✦</span> Fine line <span>✦</span> Blackwork <span>✦</span> Feito em SP <span>✦</span></div>
   </div>
 
   <!-- PORTFÓLIO -->
@@ -75,7 +85,7 @@ const faqs = [
     <div class="section-heading container-wide">
       <div>
         <p class="eyebrow">Trabalhos selecionados</p>
-        <h2>Cada pele,<br /><em>uma narrativa.</em></h2>
+        <h2>Pele não é<br /><em>parede branca.</em></h2>
       </div>
       <p>Uma seleção de projetos que nasceram de conversas, memórias e símbolos pessoais. Nenhuma história se repete — o desenho também não.</p>
     </div>
@@ -104,7 +114,7 @@ const faqs = [
     </div>
     <div class="about-copy">
       <p class="eyebrow">Por trás do traço</p>
-      <h2>Antes da tinta,<br />vem a <em>escuta.</em></h2>
+      <h2>A ideia entra.<br />A cópia <em>não.</em></h2>
       <p class="large-copy">O Aurora nasceu da vontade de tornar a tatuagem um encontro mais humano: com tempo para entender, criar e cuidar.</p>
       <p>Aqui, técnica e sensibilidade caminham juntas. Cada projeto respeita o corpo, o momento e o significado que você escolheu carregar.</p>
       <RouterLink to="/sobre" class="text-arrow-link">Conheça nossa história <ArrowRight :size="19" /></RouterLink>
@@ -116,7 +126,7 @@ const faqs = [
     <div class="section-heading section-heading-light container-wide">
       <div>
         <p class="eyebrow">A experiência Aurora</p>
-        <h2>Mais que uma<br /><em>tatuagem.</em></h2>
+        <h2>Sem atalho.<br /><em>Sem cópia.</em></h2>
       </div>
       <p>Do primeiro contato à pele cicatrizada, cada etapa foi pensada para unir expressão, conforto e excelência técnica.</p>
     </div>
@@ -134,7 +144,7 @@ const faqs = [
   <section class="section process-section">
     <div class="process-intro container-wide">
       <p class="eyebrow">Como funciona</p>
-      <h2>Da sua ideia<br />à sua pele.</h2>
+      <h2>Da obsessão<br />à cicatriz.</h2>
     </div>
     <ol class="process-list container-wide">
       <li>
@@ -168,7 +178,7 @@ const faqs = [
     <div class="faq-layout container-wide">
       <div class="faq-intro">
         <p class="eyebrow">Perguntas frequentes</p>
-        <h2>Antes de<br />agendar.</h2>
+        <h2>Perguntar faz<br />parte do ritual.</h2>
         <p>Reunimos respostas diretas para as dúvidas mais comuns de quem está planejando uma nova tatuagem.</p>
       </div>
       <div class="faq-list">
@@ -185,7 +195,7 @@ const faqs = [
     <div class="contact-layout container-wide">
       <div class="contact-intro">
         <p class="eyebrow">Comece seu projeto</p>
-        <h2>Sua ideia<br />começa <em>aqui.</em></h2>
+        <h2>Deixe uma<br /><em>marca.</em></h2>
         <p>Conte o que você imagina. Respondemos em até 1 dia útil com as próximas etapas e uma estimativa inicial.</p>
         <div class="contact-meta">
           <span>Atendimento</span><strong>Terça a sábado · 10h às 19h</strong>

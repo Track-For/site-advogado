@@ -19,8 +19,8 @@ const currentYear = new Date().getFullYear();
 
     <div v-reveal="{ delay: 80 }" class="footer-grid container-wide">
       <RouterLink class="footer-brand" to="/" aria-label="Página inicial">
-        <strong>FA</strong>
-        <span>Felipe Amorim Advogados</span>
+        <strong>A&P</strong>
+        <span>Almeida & Prado Advocacia</span>
       </RouterLink>
       <div>
         <p class="footer-label">Escritório</p>
@@ -28,8 +28,8 @@ const currentYear = new Date().getFullYear();
       </div>
       <div>
         <p class="footer-label">Contato</p>
-        <a :href="whatsappUrl()" target="_blank" rel="noopener">{{ siteConfig.phoneLabel }}</a><br />
-        <span>Atendimento presencial e online</span>
+        <a :href="`mailto:${siteConfig.email}`">{{ siteConfig.email }}</a><br />
+        <a :href="whatsappUrl()" target="_blank" rel="noopener">{{ siteConfig.phoneLabel }}</a>
       </div>
       <div>
         <p class="footer-label">Navegação</p>

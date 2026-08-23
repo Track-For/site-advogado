@@ -4,10 +4,10 @@ import { useHead } from '@unhead/vue';
 import { siteConfig, whatsappUrl } from '../data/site';
 
 useHead({
-  title: 'Felipe Amorim | Felipe Amorim Advogados',
+  title: 'O Escritório | Almeida & Prado Advocacia',
   meta: [
-    { name: 'description', content: 'Conheça a atuação empresarial de Felipe Amorim: advocacia próxima, estratégica e comprometida com decisões claras.' },
-    { property: 'og:title', content: 'Felipe Amorim | Advogados' },
+    { name: 'description', content: 'Conheça a forma de atuação do Almeida & Prado: advocacia próxima, estratégica e comprometida com decisões claras.' },
+    { property: 'og:title', content: 'O Escritório | Almeida & Prado Advocacia' },
     { property: 'og:description', content: 'Estratégia jurídica com escuta, clareza e responsabilidade.' },
     { property: 'og:url', content: `${siteConfig.domain}/sobre` },
   ],
@@ -23,7 +23,7 @@ const values = [
 
 <template>
   <section class="inner-hero about-hero">
-    <div class="inner-hero-mark" aria-hidden="true">FA</div>
+    <div class="inner-hero-mark" aria-hidden="true">AP</div>
     <div v-reveal class="container-wide inner-hero-grid">
       <div>
         <p class="eyebrow">O escritório</p>
@@ -36,15 +36,15 @@ const values = [
   <section class="story-section container-wide">
     <div v-reveal="{ x: -28, y: 0 }" class="story-seal" aria-hidden="true">
       <Scale :size="64" :stroke-width="1" />
-      <strong>FA</strong>
-      <span>Felipe Amorim Advogados</span>
+      <strong>A&P</strong>
+      <span>Advocacia estratégica</span>
     </div>
     <div v-reveal="{ delay: 100, x: 28, y: 0 }" class="story-copy">
       <p class="eyebrow">Nossa visão</p>
       <h2>Direito não é só resposta.<br />É direção.</h2>
-      <p class="large-copy">Felipe Amorim Advogados parte de uma convicção simples: um bom trabalho jurídico precisa ser tecnicamente sólido e compreensível para quem toma a decisão.</p>
+      <p class="large-copy">O Almeida & Prado nasceu de uma convicção simples: um bom trabalho jurídico precisa ser tecnicamente sólido e compreensível para quem toma a decisão.</p>
       <p>Por isso, começamos pela escuta. Antes de apontar caminhos, entendemos relações, prioridades, prazos e riscos. A estratégia surge desse contexto — não de uma fórmula.</p>
-      <p>Atuamos de forma consultiva e contenciosa, acompanhando empresas e empresários em decisões que exigem segurança, discrição e visão de longo prazo.</p>
+      <p>Atuamos de forma consultiva e contenciosa, acompanhando pessoas, famílias e empresas em decisões que exigem segurança, discrição e visão de longo prazo.</p>
     </div>
   </section>
 

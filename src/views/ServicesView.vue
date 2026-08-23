@@ -4,11 +4,11 @@ import { useHead } from '@unhead/vue';
 import { siteConfig, whatsappUrl } from '../data/site';
 
 useHead({
-  title: 'Áreas de Atuação | Felipe Amorim Advogados',
+  title: 'Áreas de Atuação | Almeida & Prado Advocacia',
   meta: [
-    { name: 'description', content: 'Conheça a atuação empresarial de Felipe Amorim em direito societário, contratos, consultoria, contencioso e recuperação de crédito.' },
-    { property: 'og:title', content: 'Áreas de Atuação | Felipe Amorim Advogados' },
-    { property: 'og:description', content: 'Assessoria jurídica estratégica para empresas e empresários.' },
+    { name: 'description', content: 'Conheça a atuação do Almeida & Prado em direito empresarial, contratos, direito civil, família, sucessões e consultoria preventiva.' },
+    { property: 'og:title', content: 'Áreas de Atuação | Almeida & Prado Advocacia' },
+    { property: 'og:description', content: 'Assessoria jurídica para empresas, pessoas e famílias com estratégia sob medida.' },
     { property: 'og:url', content: `${siteConfig.domain}/servicos` },
   ],
   link: [{ rel: 'canonical', href: `${siteConfig.domain}/servicos` }],
@@ -17,38 +17,38 @@ useHead({
 const services = [
   {
     number: '01',
-    title: 'Societário e governança',
-    subtitle: 'Estruturas que sustentam o negócio',
-    text: 'Organização jurídica das relações entre sócios e da estrutura empresarial, com foco em segurança, continuidade e tomada de decisão.',
-    items: ['Constituição e alterações societárias', 'Acordos e conflitos entre sócios', 'Reorganizações societárias', 'Governança corporativa'],
+    title: 'Direito empresarial',
+    subtitle: 'Decisões que sustentam o negócio',
+    text: 'Acompanhamento jurídico para a rotina e os momentos decisivos da empresa, com foco em prevenção de riscos e continuidade.',
+    items: ['Acordos e conflitos societários', 'Reorganizações e governança', 'Cobranças e recuperação de crédito', 'Contencioso empresarial'],
   },
   {
     number: '02',
-    title: 'Contratos empresariais',
-    subtitle: 'Relações comerciais mais seguras',
-    text: 'Estruturação de instrumentos claros e coerentes com a operação, os objetivos e os riscos envolvidos em cada relação comercial.',
-    items: ['Elaboração e revisão contratual', 'Negociações estratégicas', 'Distratos e inadimplemento', 'Contratos comerciais e operacionais'],
+    title: 'Contratos',
+    subtitle: 'Relações mais seguras começam no papel',
+    text: 'Estruturação de instrumentos claros, equilibrados e coerentes com a operação e os riscos envolvidos.',
+    items: ['Elaboração e revisão contratual', 'Negociações estratégicas', 'Distratos e inadimplemento', 'Contratos comerciais e civis'],
   },
   {
     number: '03',
-    title: 'Consultoria empresarial',
-    subtitle: 'Direito integrado à gestão',
-    text: 'Apoio jurídico para decisões estratégicas, organização de rotinas e prevenção de riscos na atividade empresarial.',
-    items: ['Orientação jurídica estratégica', 'Mapeamento de riscos', 'Políticas e processos internos', 'Assessoria jurídica recorrente'],
+    title: 'Direito civil',
+    subtitle: 'Proteção para relações e patrimônio',
+    text: 'Atuação em questões patrimoniais, obrigações e conflitos privados, pela via consultiva ou judicial.',
+    items: ['Responsabilidade civil', 'Indenizações e obrigações', 'Posse e propriedade', 'Ações e defesas judiciais'],
   },
   {
     number: '04',
-    title: 'Contencioso empresarial',
-    subtitle: 'Estratégia para conflitos do negócio',
-    text: 'Atuação em disputas empresariais com análise de risco, definição de estratégia e condução objetiva de cada etapa.',
-    items: ['Conflitos societários', 'Inadimplemento contratual', 'Ações e defesas empresariais', 'Negociação e composição de litígios'],
+    title: 'Família e sucessões',
+    subtitle: 'Técnica e cuidado em decisões pessoais',
+    text: 'Condução responsável de questões familiares e patrimoniais que pedem sensibilidade, discrição e planejamento.',
+    items: ['Divórcios e acordos', 'Inventários e partilhas', 'Planejamento sucessório', 'Proteção patrimonial familiar'],
   },
   {
     number: '05',
-    title: 'Cobrança e recuperação de crédito',
-    subtitle: 'Proteção do fluxo financeiro',
-    text: 'Estratégias extrajudiciais e judiciais para recuperação de valores, preservando a análise econômica de cada medida.',
-    items: ['Cobrança extrajudicial', 'Negociação de dívidas', 'Ações de cobrança e execução', 'Análise de garantias e documentos'],
+    title: 'Consultoria preventiva',
+    subtitle: 'Antecipar é também proteger',
+    text: 'Apoio recorrente para identificar riscos, organizar documentos e decidir antes que um impasse se transforme em litígio.',
+    items: ['Pareceres e orientação estratégica', 'Mapeamento de riscos jurídicos', 'Notificações e negociações', 'Acompanhamento mensal'],
   },
 ];
 </script>
@@ -57,11 +57,11 @@ const services = [
   <section class="inner-hero services-hero">
     <div class="inner-hero-mark" aria-hidden="true">§</div>
     <div v-reveal class="container-wide inner-hero-grid">
-      <div class="services-hero-copy">
-        <p class="eyebrow">Advocacia empresarial</p>
+      <div>
+        <p class="eyebrow">Áreas de atuação</p>
         <h1>Conhecimento técnico.<br /><em>Estratégia aplicada.</em></h1>
-        <p>Cada serviço parte do mesmo princípio: compreender o negócio para construir uma solução adequada à empresa.</p>
       </div>
+      <p>Cada serviço parte do mesmo princípio: compreender o todo para construir uma solução adequada ao seu contexto.</p>
     </div>
   </section>
 

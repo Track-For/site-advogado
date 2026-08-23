@@ -1,16 +1,16 @@
 // Centralize os dados reais do escritório neste arquivo antes da publicação.
 export const siteConfig = {
-  name: 'Felipe Amorim Advogados',
-  shortName: 'Felipe Amorim',
+  name: 'Almeida & Prado Advocacia',
+  shortName: 'Almeida & Prado',
   domain: 'https://almeida-prado-advocacia.luizfhellippe.chatgpt.site',
-  email: '',
-  phoneLabel: 'Atendimento pelo WhatsApp',
+  email: 'contato@almeidaprado.adv.br',
+  phoneLabel: '(11) 99999-9999',
   whatsappDigits: '5511999999999',
-  instagramHandle: '',
-  instagramUrl: '',
-  location: 'Atendimento presencial e online',
-  address: 'Atendimento com hora marcada',
+  instagramHandle: '@almeidaprado.adv',
+  instagramUrl: 'https://instagram.com/almeidaprado.adv',
+  location: 'São Paulo · Atendimento nacional',
+  address: 'Av. Paulista, São Paulo — SP',
 };
 
-export const whatsappUrl = (message = 'Olá, Felipe! Gostaria de agendar uma conversa.') =>
+export const whatsappUrl = (message = 'Olá! Gostaria de agendar uma conversa com um advogado.') =>
   `https://wa.me/${siteConfig.whatsappDigits}?text=${encodeURIComponent(message)}`;

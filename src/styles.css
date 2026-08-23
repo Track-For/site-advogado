@@ -606,8 +606,9 @@ body { background: #171918; }
 .header-cta { border-color: var(--forest-deep); background: var(--forest-deep); }
 .header-cta:hover { border-color: var(--gold); background: var(--gold); color: #fff; }
 
-.photo-hero { background: var(--forest-deep); }
-.photo-hero-shade { background: linear-gradient(90deg, rgba(12, 27, 17, .96) 0%, rgba(12, 27, 17, .83) 36%, rgba(12, 27, 17, .24) 65%, rgba(12, 27, 17, .04) 100%); }
+.photo-hero { background-color: var(--forest-deep); background-image: url('/images/felipe-amorim-hero-v2.png'); background-position: center; background-size: cover; }
+.photo-hero > .photo-hero-background { z-index: 0; opacity: 1; filter: saturate(.94) contrast(1.03); }
+.photo-hero-shade { z-index: 1; background: linear-gradient(90deg, rgba(12, 27, 17, .9) 0%, rgba(12, 27, 17, .66) 38%, rgba(12, 27, 17, .08) 64%, rgba(12, 27, 17, 0) 100%); }
 .photo-hero-copy .eyebrow { color: var(--gold); letter-spacing: .22em; }
 .photo-hero-copy h1 { max-width: 790px; font-family: 'Cormorant Garamond', serif; font-weight: 500; letter-spacing: -.055em; line-height: .82; }
 .photo-hero-copy h1 em { color: var(--gold); font-style: italic; }
@@ -618,8 +619,9 @@ body { background: #171918; }
   .brand-mark { width: 32px; height: 32px; }
   .brand-name { font-size: .76rem; }
   .brand-subtitle { font-size: .36rem; }
-  .photo-hero > img { object-position: 67% center; }
-  .photo-hero-shade { background: linear-gradient(180deg, rgba(12,27,17,.2) 0%, rgba(12,27,17,.46) 38%, rgba(12,27,17,.96) 78%); }
+  .photo-hero { background-position: 68% center; }
+  .photo-hero > img { object-position: 68% center; }
+  .photo-hero-shade { background: linear-gradient(180deg, rgba(12,27,17,.04) 0%, rgba(12,27,17,.18) 38%, rgba(12,27,17,.92) 78%); }
 }
 
 /* Aplicação integral da paleta e do sistema visual Felipe Amorim */

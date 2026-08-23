@@ -53,7 +53,7 @@ const faqs = [
 
 <template>
   <section class="photo-hero">
-    <img src="/images/felipe-amorim-hero.png" width="1536" height="1024" alt="Felipe Amorim em seu escritório" fetchpriority="high" />
+    <img class="photo-hero-background" src="/images/felipe-amorim-hero-v2.png" width="1536" height="1024" alt="Felipe Amorim em seu escritório" fetchpriority="high" />
     <div class="photo-hero-shade" aria-hidden="true"></div>
     <div class="photo-hero-copy">
       <p class="eyebrow">Felipe Amorim · Advocacia Empresarial</p>
@@ -98,7 +98,7 @@ const faqs = [
       </div>
     </div>
     <figure class="overview-image">
-      <img src="/images/felipe-amorim-hero.png" width="1536" height="1024" alt="Felipe Amorim em seu escritório" loading="lazy" />
+      <img src="/images/felipe-amorim-hero-v2.png" width="1536" height="1024" alt="Felipe Amorim em seu escritório" loading="lazy" />
       <figcaption>Felipe Amorim · Atendimento próximo</figcaption>
     </figure>
   </section>

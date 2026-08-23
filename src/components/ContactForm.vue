@@ -50,11 +50,11 @@ function submitLead() {
       <span>Área do atendimento *</span>
       <select v-model="form.area" name="area">
         <option value="" disabled>Selecione uma opção</option>
-        <option>Direito empresarial</option>
-        <option>Contratos</option>
-        <option>Direito civil</option>
-        <option>Família e sucessões</option>
-        <option>Consultoria preventiva</option>
+        <option>Societário e governança</option>
+        <option>Contratos empresariais</option>
+        <option>Consultoria empresarial</option>
+        <option>Contencioso empresarial</option>
+        <option>Cobrança e recuperação de crédito</option>
         <option>Não tenho certeza</option>
       </select>
     </label>

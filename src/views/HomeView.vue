@@ -14,27 +14,27 @@ import ContactForm from '../components/ContactForm.vue';
 import { siteConfig, whatsappUrl } from '../data/site';
 
 useHead({
-  title: 'Felipe Amorim Advogados | Clareza para decidir',
+  title: 'Felipe Amorim Advogados | Advocacia Empresarial',
   meta: [
-    { name: 'description', content: 'Atuação jurídica estratégica em direito empresarial, contratos, direito civil, família e sucessões, com atendimento próximo e responsável.' },
+    { name: 'description', content: 'Advocacia empresarial estratégica para empresas e empresários, com atuação societária, contratual, consultiva e contenciosa.' },
     { property: 'og:title', content: 'Felipe Amorim Advogados' },
-    { property: 'og:description', content: 'Clareza para decidir. Firmeza para defender.' },
+    { property: 'og:description', content: 'Advocacia empresarial com clareza, estratégia e presença.' },
     { property: 'og:url', content: siteConfig.domain },
   ],
   link: [{ rel: 'canonical', href: siteConfig.domain }],
 });
 
 const introItems = [
-  { icon: Scale, title: 'Felipe Amorim', text: 'Conheça a visão e a forma de conduzir cada caso com presença e estratégia.', link: '/sobre', label: 'Conheça o escritório' },
-  { icon: BriefcaseBusiness, title: 'Áreas de atuação', text: 'Soluções jurídicas para pessoas, famílias e empresas.', link: '/servicos', label: 'Ver serviços' },
-  { icon: UsersRound, title: 'Fale conosco', text: 'Conte seu contexto e receba orientação sobre o próximo passo.', link: '#contato', label: 'Iniciar conversa' },
+  { icon: Scale, title: 'Felipe Amorim', text: 'Conheça a visão empresarial e a forma de conduzir cada demanda com estratégia.', link: '/sobre', label: 'Conheça o escritório' },
+  { icon: BriefcaseBusiness, title: 'Atuação empresarial', text: 'Soluções jurídicas para a rotina, os contratos e as decisões da sua empresa.', link: '/servicos', label: 'Ver serviços' },
+  { icon: UsersRound, title: 'Fale conosco', text: 'Conte o contexto do negócio e receba orientação sobre o próximo passo.', link: '#contato', label: 'Iniciar conversa' },
 ];
 
 const practiceAreas = [
-  { icon: BriefcaseBusiness, number: '01', title: 'Direito empresarial', text: 'Suporte jurídico para decisões societárias, conflitos entre sócios e rotina da empresa.' },
-  { icon: FileSignature, number: '02', title: 'Contratos', text: 'Elaboração, revisão e negociação de instrumentos claros, equilibrados e seguros.' },
-  { icon: Landmark, number: '03', title: 'Direito civil', text: 'Atuação consultiva e contenciosa em obrigações, patrimônio e relações privadas.' },
-  { icon: UsersRound, number: '04', title: 'Família e sucessões', text: 'Orientação cuidadosa em divórcios, inventários e planejamento sucessório.' },
+  { icon: BriefcaseBusiness, number: '01', title: 'Societário e governança', text: 'Suporte para estrutura societária, acordos entre sócios, reorganizações e governança.' },
+  { icon: FileSignature, number: '02', title: 'Contratos empresariais', text: 'Elaboração, revisão e negociação de instrumentos alinhados à operação e aos riscos do negócio.' },
+  { icon: Landmark, number: '03', title: 'Consultoria empresarial', text: 'Orientação preventiva e apoio jurídico para decisões estratégicas e rotina corporativa.' },
+  { icon: Scale, number: '04', title: 'Contencioso empresarial', text: 'Condução de conflitos empresariais com análise de risco, estratégia e objetividade.' },
 ];
 
 const principles = [
@@ -44,10 +44,10 @@ const principles = [
 ];
 
 const faqs = [
-  { q: 'Como funciona o primeiro atendimento?', a: 'O primeiro contato serve para entendermos o tema, identificarmos urgências e verificarmos se o caso está dentro da atuação do escritório. Depois, explicamos o formato e os próximos passos.' },
-  { q: 'O escritório atende de forma online?', a: 'Sim. Atendemos clientes em todo o Brasil por videoconferência, com envio seguro de documentos e acompanhamento remoto.' },
-  { q: 'Quais documentos devo separar?', a: 'Depende do caso. No primeiro contato, informe o contexto e os prazos existentes. Nossa equipe indicará apenas os documentos necessários para a análise.' },
-  { q: 'Quanto custa uma consulta ou serviço jurídico?', a: 'Os honorários variam conforme a complexidade, urgência e escopo. A proposta é apresentada com clareza antes do início da contratação.' },
+  { q: 'Como funciona o primeiro atendimento empresarial?', a: 'O primeiro contato serve para compreender a empresa, a demanda, os riscos e eventuais prazos. A partir desse contexto, o escritório apresenta o formato de atuação e os próximos passos.' },
+  { q: 'O atendimento pode ser consultivo e recorrente?', a: 'Sim. A assessoria pode acompanhar decisões, contratos e rotinas empresariais de forma contínua, conforme o escopo definido para cada negócio.' },
+  { q: 'É possível procurar o escritório antes de surgir um conflito?', a: 'Sim. A atuação preventiva ajuda a organizar relações societárias, contratos e processos internos antes que um risco se transforme em litígio.' },
+  { q: 'Como são definidos os honorários?', a: 'Os honorários variam conforme a complexidade, urgência e escopo da demanda empresarial. A proposta é apresentada com clareza antes do início da contratação.' },
 ];
 </script>
 
@@ -56,9 +56,9 @@ const faqs = [
     <img src="/images/felipe-amorim-hero.png" width="1536" height="1024" alt="Felipe Amorim em seu escritório" fetchpriority="high" />
     <div class="photo-hero-shade" aria-hidden="true"></div>
     <div class="photo-hero-copy">
-      <p class="eyebrow">Felipe Amorim · Advogados</p>
+      <p class="eyebrow">Felipe Amorim · Advocacia Empresarial</p>
       <h1>Clareza para<br />decidir. Firmeza<br />para <em>defender.</em></h1>
-      <p>Atuação jurídica estratégica, próxima e responsável para proteger o que importa e construir caminhos seguros.</p>
+      <p>Assessoria jurídica estratégica para empresas e empresários, da prevenção de riscos à condução de decisões e conflitos.</p>
       <div class="photo-hero-actions">
         <a class="button button-light" :href="whatsappUrl()" target="_blank" rel="noopener">Agendar uma conversa <ArrowUpRight :size="17" /></a>
         <a href="#atuacao">Conheça nossa atuação <span>↓</span></a>
@@ -109,9 +109,9 @@ const faqs = [
       <small>Felipe Amorim<br />Advogados</small>
     </div>
     <div class="team-feature-copy">
-      <p class="mini-label">Presença em cada etapa</p>
+      <p class="mini-label">Advocacia empresarial próxima</p>
       <h2>Cada caso começa com escuta.</h2>
-      <p>Você fala com quem analisa e conduz sua demanda. Cada recomendação considera o impacto jurídico, humano e financeiro da decisão.</p>
+      <p>Você fala com quem analisa e conduz sua demanda. Cada recomendação considera o impacto jurídico, operacional e financeiro para a empresa.</p>
       <div class="team-feature-actions">
         <RouterLink to="/sobre" class="soft-button">Conheça o escritório</RouterLink>
         <a :href="whatsappUrl()" target="_blank" rel="noopener" class="dark-pill">Agendar conversa</a>
@@ -127,9 +127,9 @@ const faqs = [
     <div class="solutions-heading container-wide">
       <div>
         <p class="mini-label">Nossas soluções</p>
-        <h2>Atuação jurídica<br />pensada para a vida real.</h2>
+        <h2>Atuação jurídica<br />pensada para o negócio.</h2>
       </div>
-      <p>Da prevenção de riscos à condução de conflitos, construímos respostas proporcionais ao que está em jogo.</p>
+      <p>Da estrutura societária aos contratos e conflitos, construímos respostas proporcionais ao que está em jogo.</p>
     </div>
     <div class="solutions-grid container-wide">
       <article v-for="area in practiceAreas" :key="area.number">

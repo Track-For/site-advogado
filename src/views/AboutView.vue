@@ -6,7 +6,7 @@ import { siteConfig, whatsappUrl } from '../data/site';
 useHead({
   title: 'Felipe Amorim | Felipe Amorim Advogados',
   meta: [
-    { name: 'description', content: 'Conheça a forma de atuação de Felipe Amorim: advocacia próxima, estratégica e comprometida com decisões claras.' },
+    { name: 'description', content: 'Conheça a atuação empresarial de Felipe Amorim: advocacia próxima, estratégica e comprometida com decisões claras.' },
     { property: 'og:title', content: 'Felipe Amorim | Advogados' },
     { property: 'og:description', content: 'Estratégia jurídica com escuta, clareza e responsabilidade.' },
     { property: 'og:url', content: `${siteConfig.domain}/sobre` },
@@ -44,7 +44,7 @@ const values = [
       <h2>Direito não é só resposta.<br />É direção.</h2>
       <p class="large-copy">Felipe Amorim Advogados parte de uma convicção simples: um bom trabalho jurídico precisa ser tecnicamente sólido e compreensível para quem toma a decisão.</p>
       <p>Por isso, começamos pela escuta. Antes de apontar caminhos, entendemos relações, prioridades, prazos e riscos. A estratégia surge desse contexto — não de uma fórmula.</p>
-      <p>Atuamos de forma consultiva e contenciosa, acompanhando pessoas, famílias e empresas em decisões que exigem segurança, discrição e visão de longo prazo.</p>
+      <p>Atuamos de forma consultiva e contenciosa, acompanhando empresas e empresários em decisões que exigem segurança, discrição e visão de longo prazo.</p>
     </div>
   </section>
 

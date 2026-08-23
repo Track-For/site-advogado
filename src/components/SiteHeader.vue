@@ -41,7 +41,7 @@ onBeforeUnmount(() => {
       </RouterLink>
 
       <nav class="desktop-nav" aria-label="Navegação principal">
-        <RouterLink to="/#atuacao">Áreas de atuação</RouterLink>
+        <RouterLink to="/#atuacao">Atuação empresarial</RouterLink>
         <RouterLink to="/sobre">Felipe Amorim</RouterLink>
         <RouterLink to="/servicos">Serviços</RouterLink>
       </nav>
@@ -57,7 +57,7 @@ onBeforeUnmount(() => {
     </div>
 
     <nav v-show="menuOpen" id="mobile-menu" class="mobile-nav" aria-label="Navegação para celular">
-      <RouterLink to="/#atuacao">Áreas de atuação <span>01</span></RouterLink>
+      <RouterLink to="/#atuacao">Atuação empresarial <span>01</span></RouterLink>
       <RouterLink to="/sobre">Felipe Amorim <span>02</span></RouterLink>
       <RouterLink to="/servicos">Serviços <span>03</span></RouterLink>
       <a :href="whatsappUrl()" target="_blank" rel="noopener">Agendar conversa <ArrowUpRight :size="24" /></a>

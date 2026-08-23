@@ -24,135 +24,146 @@ useHead({
   link: [{ rel: 'canonical', href: siteConfig.domain }],
 });
 
+const introItems = [
+  { icon: Scale, title: 'O escritório', text: 'Conheça a visão e a forma de trabalhar do Almeida & Prado.', link: '/sobre', label: 'Nossa história' },
+  { icon: BriefcaseBusiness, title: 'Áreas de atuação', text: 'Soluções jurídicas para pessoas, famílias e empresas.', link: '/servicos', label: 'Ver serviços' },
+  { icon: UsersRound, title: 'Fale conosco', text: 'Conte seu contexto e receba orientação sobre o próximo passo.', link: '#contato', label: 'Iniciar conversa' },
+];
+
 const practiceAreas = [
-  { icon: BriefcaseBusiness, number: '01', title: 'Direito empresarial', text: 'Suporte jurídico para decisões societárias, reorganizações, conflitos entre sócios e rotina da empresa.' },
-  { icon: FileSignature, number: '02', title: 'Contratos', text: 'Elaboração, revisão e negociação de instrumentos que reduzam riscos e deem segurança às relações.' },
-  { icon: Landmark, number: '03', title: 'Direito civil', text: 'Atuação consultiva e contenciosa em obrigações, responsabilidade civil, patrimônio e relações privadas.' },
-  { icon: UsersRound, number: '04', title: 'Família e sucessões', text: 'Orientação cuidadosa em divórcios, inventários, planejamento sucessório e proteção patrimonial.' },
+  { icon: BriefcaseBusiness, number: '01', title: 'Direito empresarial', text: 'Suporte jurídico para decisões societárias, conflitos entre sócios e rotina da empresa.' },
+  { icon: FileSignature, number: '02', title: 'Contratos', text: 'Elaboração, revisão e negociação de instrumentos claros, equilibrados e seguros.' },
+  { icon: Landmark, number: '03', title: 'Direito civil', text: 'Atuação consultiva e contenciosa em obrigações, patrimônio e relações privadas.' },
+  { icon: UsersRound, number: '04', title: 'Família e sucessões', text: 'Orientação cuidadosa em divórcios, inventários e planejamento sucessório.' },
 ];
 
 const principles = [
-  { number: '01', title: 'Diagnóstico', text: 'Entendemos o contexto completo, os riscos e o que realmente precisa ser protegido.' },
-  { number: '02', title: 'Estratégia', text: 'Apresentamos caminhos possíveis, custos, prazos e impactos em linguagem objetiva.' },
-  { number: '03', title: 'Condução', text: 'Executamos a estratégia com comunicação próxima e atualização em cada etapa relevante.' },
+  { number: '01', title: 'Entender', text: 'Ouvimos o contexto completo, identificamos riscos e definimos prioridades.' },
+  { number: '02', title: 'Planejar', text: 'Apresentamos caminhos, impactos e alternativas em linguagem objetiva.' },
+  { number: '03', title: 'Conduzir', text: 'Executamos a estratégia com proximidade e atualização em cada etapa.' },
 ];
 
 const faqs = [
   { q: 'Como funciona o primeiro atendimento?', a: 'O primeiro contato serve para entendermos o tema, identificarmos urgências e verificarmos se o caso está dentro da atuação do escritório. Depois, explicamos o formato e os próximos passos.' },
   { q: 'O escritório atende de forma online?', a: 'Sim. Atendemos clientes em todo o Brasil por videoconferência, com envio seguro de documentos e acompanhamento remoto.' },
   { q: 'Quais documentos devo separar?', a: 'Depende do caso. No primeiro contato, informe o contexto e os prazos existentes. Nossa equipe indicará apenas os documentos necessários para a análise.' },
-  { q: 'Quanto custa uma consulta ou serviço jurídico?', a: 'Os honorários variam conforme a complexidade, urgência e escopo do trabalho. A proposta é apresentada com clareza antes do início da contratação.' },
+  { q: 'Quanto custa uma consulta ou serviço jurídico?', a: 'Os honorários variam conforme a complexidade, urgência e escopo. A proposta é apresentada com clareza antes do início da contratação.' },
 ];
 </script>
 
 <template>
-  <section class="hero legal-hero">
-    <div class="hero-grid" aria-hidden="true"></div>
-    <div class="hero-index" aria-hidden="true">A&P</div>
-    <div class="hero-rail" aria-hidden="true">ESTRATÉGIA · PROXIMIDADE · RESPONSABILIDADE</div>
-
-    <div class="hero-copy">
-      <p class="eyebrow"><span aria-hidden="true">◆</span> Advocacia estratégica · São Paulo</p>
-      <h1><span>Decisões</span><span>jurídicas,</span><em>sem incerteza.</em></h1>
-      <p class="hero-lead">Orientação clara para proteger seu patrimônio, sua empresa e seus próximos passos. <strong>Atendimento direto por advogados.</strong></p>
-      <div class="hero-actions">
-        <a class="button button-primary" :href="whatsappUrl()" target="_blank" rel="noopener">
-          Agendar análise inicial <ArrowUpRight :size="18" aria-hidden="true" />
-        </a>
-        <a class="text-link text-link-light" href="#atuacao">Conheça nossa atuação <span aria-hidden="true">↓</span></a>
-      </div>
-      <div class="hero-manifesto" aria-label="Compromisso do escritório">
-        <span>Clareza no caminho.</span>
-        <strong>Firmeza na defesa.</strong>
+  <section class="photo-hero">
+    <img src="/images/lawyer-hero-v2.png" width="1536" height="1024" alt="Advogado em um escritório contemporâneo" fetchpriority="high" />
+    <div class="photo-hero-shade" aria-hidden="true"></div>
+    <div class="photo-hero-copy">
+      <p class="eyebrow">Almeida & Prado · Advocacia estratégica</p>
+      <h1>Ajudamos você<br />a decidir com<br /><em>segurança.</em></h1>
+      <p>Estratégia jurídica clara para proteger relações, patrimônio e negócios — com proximidade em cada etapa.</p>
+      <div class="photo-hero-actions">
+        <a class="button button-light" :href="whatsappUrl()" target="_blank" rel="noopener">Agendar uma conversa <ArrowUpRight :size="17" /></a>
+        <a href="#atuacao">Conheça nossa atuação <span>↓</span></a>
       </div>
     </div>
-
-    <aside class="hero-visual legal-dossier" aria-label="Compromissos do escritório">
-      <div class="dossier-card">
-        <div class="dossier-brand"><span>A&P</span><small>ALMEIDA & PRADO</small></div>
-        <p>ADVOCACIA ESTRATÉGICA</p>
-        <strong>A solução começa quando o problema é compreendido por inteiro.</strong>
-        <dl>
-          <div><dt>01</dt><dd>Escuta ativa</dd></div>
-          <div><dt>02</dt><dd>Estratégia sob medida</dd></div>
-          <div><dt>03</dt><dd>Comunicação transparente</dd></div>
-        </dl>
-      </div>
-    </aside>
-
-    <div class="hero-proof" aria-label="Formas de atendimento">
-      <span><strong>01</strong> presencial em São Paulo</span>
-      <span><strong>02</strong> online para todo o Brasil</span>
-      <span><strong>03</strong> retorno em até 1 dia útil</span>
+    <div class="photo-hero-note">
+      <span>Atendimento presencial e online</span>
+      <strong>São Paulo · Todo o Brasil</strong>
     </div>
   </section>
 
-  <div class="ticker" aria-hidden="true">
-    <div>Direito empresarial <span>✦</span> Contratos <span>✦</span> Direito civil <span>✦</span> Família e sucessões <span>✦</span> Direito empresarial <span>✦</span> Contratos <span>✦</span> Direito civil <span>✦</span> Família e sucessões <span>✦</span></div>
-  </div>
-
-  <section id="atuacao" class="section practice-section">
-    <div class="section-heading container-wide">
-      <div>
-        <p class="eyebrow">Áreas de atuação</p>
-        <h2>Experiência que<br /><em>orienta decisões.</em></h2>
-      </div>
-      <p>Atuação consultiva e contenciosa para pessoas, famílias e empresas, com estratégia construída para a realidade de cada caso.</p>
+  <section id="atuacao" class="intro-panel">
+    <div class="intro-heading container-wide">
+      <p class="mini-label">Introdução</p>
+      <h2>Experiência jurídica para transformar<br />complexidade em boas decisões.</h2>
     </div>
-
-    <div class="practice-grid container-wide">
-      <article v-for="area in practiceAreas" :key="area.number" class="practice-card">
-        <div class="practice-card-top">
-          <component :is="area.icon" :size="27" :stroke-width="1.45" aria-hidden="true" />
-          <span>{{ area.number }}</span>
-        </div>
-        <h3>{{ area.title }}</h3>
-        <p>{{ area.text }}</p>
-        <RouterLink to="/servicos" :aria-label="`Saiba mais sobre ${area.title}`">Saiba mais <ArrowUpRight :size="17" /></RouterLink>
+    <div class="intro-grid container-wide">
+      <article v-for="item in introItems" :key="item.title">
+        <component :is="item.icon" :size="27" :stroke-width="1.45" aria-hidden="true" />
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.text }}</p>
+        <RouterLink v-if="item.link.startsWith('/')" :to="item.link">{{ item.label }}</RouterLink>
+        <a v-else :href="item.link">{{ item.label }}</a>
       </article>
     </div>
   </section>
 
-  <section class="statement-section">
-    <div class="statement-number" aria-hidden="true">§</div>
-    <div class="statement-copy container-wide">
-      <p class="eyebrow">Nossa forma de atuar</p>
-      <h2>O juridiquês fica conosco.<br /><em>A clareza fica com você.</em></h2>
-      <p>Traduzimos cenários complexos em decisões possíveis. Sem promessas vazias, sem respostas genéricas e sem deixar você no escuro.</p>
-      <RouterLink to="/sobre" class="text-arrow-link">Conheça o escritório <ArrowRight :size="18" /></RouterLink>
+  <section class="overview-section container-wide">
+    <div class="overview-copy">
+      <p class="mini-label">Almeida & Prado</p>
+      <h2>Direito que acompanha seus planos.</h2>
+      <p>Unimos rigor técnico, visão de negócio e comunicação simples para que você entenda o cenário e escolha o melhor caminho.</p>
+      <div class="overview-links">
+        <RouterLink v-for="area in practiceAreas" :key="area.number" to="/servicos">
+          <span>{{ area.title }}</span><b>+</b>
+        </RouterLink>
+      </div>
+    </div>
+    <figure class="overview-image">
+      <img src="/images/lawyer-hero-v2.png" width="1536" height="1024" alt="Profissional do Almeida & Prado em atendimento" loading="lazy" />
+      <figcaption>Estratégia jurídica · Atendimento próximo</figcaption>
+    </figure>
+  </section>
+
+  <section class="team-feature">
+    <div class="team-feature-image">
+      <img src="/images/legal-team-v2.png" width="1536" height="1024" alt="Equipe jurídica reunida em um escritório" loading="lazy" />
+    </div>
+    <div class="team-feature-copy">
+      <p class="mini-label">Uma advocacia diferente</p>
+      <h2>Não somos apenas mais um escritório.</h2>
+      <p>Você fala com quem analisa e conduz seu caso. Cada recomendação considera o impacto jurídico, humano e financeiro da decisão.</p>
+      <div class="team-feature-actions">
+        <RouterLink to="/sobre" class="soft-button">Conheça o escritório</RouterLink>
+        <a :href="whatsappUrl()" target="_blank" rel="noopener" class="dark-pill">Agendar conversa</a>
+      </div>
+    </div>
+    <div class="team-contact-chip">
+      <span>A&P</span>
+      <p>Fale com nossa equipe<br /><strong>{{ siteConfig.phoneLabel }}</strong></p>
     </div>
   </section>
 
-  <section class="section method-section">
-    <div class="method-intro container-wide">
+  <section class="section solutions-section">
+    <div class="solutions-heading container-wide">
       <div>
-        <p class="eyebrow">Como trabalhamos</p>
-        <h2>Do contexto à<br /><em>estratégia.</em></h2>
+        <p class="mini-label">Nossas soluções</p>
+        <h2>Atuação jurídica<br />pensada para a vida real.</h2>
       </div>
-      <p>Cada caso começa com escuta e termina com um plano compreensível. Você sabe o que está sendo feito, por quê e qual é o próximo passo.</p>
+      <p>Da prevenção de riscos à condução de conflitos, construímos respostas proporcionais ao que está em jogo.</p>
     </div>
-    <ol class="method-list container-wide">
+    <div class="solutions-grid container-wide">
+      <article v-for="area in practiceAreas" :key="area.number">
+        <div><span>{{ area.number }}</span><component :is="area.icon" :size="24" :stroke-width="1.4" /></div>
+        <h3>{{ area.title }}</h3>
+        <p>{{ area.text }}</p>
+        <RouterLink to="/servicos" :aria-label="`Saiba mais sobre ${area.title}`">Saiba mais <ArrowUpRight :size="15" /></RouterLink>
+      </article>
+    </div>
+  </section>
+
+  <section class="process-v2">
+    <div class="process-v2-heading container-wide">
+      <p class="mini-label">Como trabalhamos</p>
+      <h2>Clareza do primeiro contato<br />até a última decisão.</h2>
+    </div>
+    <ol class="process-v2-list container-wide">
       <li v-for="principle in principles" :key="principle.number">
         <span>{{ principle.number }}</span>
         <h3>{{ principle.title }}</h3>
         <p>{{ principle.text }}</p>
+        <ArrowRight :size="20" aria-hidden="true" />
       </li>
     </ol>
-  </section>
-
-  <section class="reassurance-section">
-    <div class="reassurance-inner container-wide">
-      <ShieldCheck :size="38" :stroke-width="1.25" aria-hidden="true" />
-      <p>Sigilo, responsabilidade e transparência em todas as etapas do atendimento.</p>
-      <small>A advocacia é uma relação de confiança.</small>
+    <div class="trust-line container-wide">
+      <ShieldCheck :size="24" :stroke-width="1.4" />
+      <span>Sigilo, responsabilidade e transparência em todas as etapas.</span>
     </div>
   </section>
 
-  <section class="section faq-section">
+  <section class="section faq-section faq-v2">
     <div class="faq-layout container-wide">
       <div class="faq-intro">
-        <p class="eyebrow">Perguntas frequentes</p>
-        <h2>Informação também<br /><em>traz segurança.</em></h2>
+        <p class="mini-label">Perguntas frequentes</p>
+        <h2>Informação também<br />traz segurança.</h2>
         <p>Respostas diretas para as principais dúvidas antes do primeiro atendimento.</p>
       </div>
       <div class="faq-list">
@@ -164,11 +175,11 @@ const faqs = [
     </div>
   </section>
 
-  <section id="contato" class="contact-section">
+  <section id="contato" class="contact-section contact-v2">
     <div class="contact-layout container-wide">
       <div class="contact-intro">
-        <p class="eyebrow">Fale com o escritório</p>
-        <h2>Seu próximo passo<br />começa com <em>clareza.</em></h2>
+        <p class="mini-label">Fale com o escritório</p>
+        <h2>Seu próximo passo começa com uma conversa.</h2>
         <p>Conte brevemente o que está acontecendo. Retornaremos em até 1 dia útil para orientar as próximas etapas.</p>
         <div class="contact-meta">
           <span>Atendimento</span><strong>Segunda a sexta · 9h às 18h</strong>

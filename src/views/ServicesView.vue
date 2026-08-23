@@ -57,11 +57,11 @@ const services = [
   <section class="inner-hero services-hero">
     <div class="inner-hero-mark" aria-hidden="true">§</div>
     <div class="container-wide inner-hero-grid">
-      <div>
+      <div class="services-hero-copy">
         <p class="eyebrow">Advocacia empresarial</p>
         <h1>Conhecimento técnico.<br /><em>Estratégia aplicada.</em></h1>
+        <p>Cada serviço parte do mesmo princípio: compreender o negócio para construir uma solução adequada à empresa.</p>
       </div>
-      <p>Cada serviço parte do mesmo princípio: compreender o negócio para construir uma solução adequada à empresa.</p>
     </div>
   </section>
 

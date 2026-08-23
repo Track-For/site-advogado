@@ -7,7 +7,7 @@ const currentYear = new Date().getFullYear();
 
 <template>
   <footer class="site-footer">
-    <div class="footer-top container-wide">
+    <div v-reveal class="footer-top container-wide">
       <div>
         <p class="footer-kicker">Uma decisão bem orientada começa por uma conversa.</p>
         <h2>Vamos entender<br />o seu <em>caso.</em></h2>
@@ -17,7 +17,7 @@ const currentYear = new Date().getFullYear();
       </a>
     </div>
 
-    <div class="footer-grid container-wide">
+    <div v-reveal="{ delay: 80 }" class="footer-grid container-wide">
       <RouterLink class="footer-brand" to="/" aria-label="Página inicial">
         <strong>FA</strong>
         <span>Felipe Amorim Advogados</span>

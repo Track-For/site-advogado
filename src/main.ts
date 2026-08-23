@@ -1,5 +1,6 @@
 import { ViteSSG } from 'vite-ssg';
 import App from './App.vue';
+import { revealDirective } from './directives/reveal';
 import { routes } from './router';
 import './styles.css';
 
@@ -12,5 +13,8 @@ export const createApp = ViteSSG(
       if (to.hash) return { el: to.hash, behavior: 'smooth', top: 88 };
       return { top: 0 };
     },
+  },
+  ({ app }) => {
+    app.directive('reveal', revealDirective);
   },
 );

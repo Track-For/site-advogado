@@ -24,7 +24,7 @@ const values = [
 <template>
   <section class="inner-hero about-hero">
     <div class="inner-hero-mark" aria-hidden="true">FA</div>
-    <div class="container-wide inner-hero-grid">
+    <div v-reveal class="container-wide inner-hero-grid">
       <div>
         <p class="eyebrow">O escritório</p>
         <h1>Estratégia jurídica<br />com <em>presença.</em></h1>
@@ -34,12 +34,12 @@ const values = [
   </section>
 
   <section class="story-section container-wide">
-    <div class="story-seal" aria-hidden="true">
+    <div v-reveal="{ x: -28, y: 0 }" class="story-seal" aria-hidden="true">
       <Scale :size="64" :stroke-width="1" />
       <strong>FA</strong>
       <span>Felipe Amorim Advogados</span>
     </div>
-    <div class="story-copy">
+    <div v-reveal="{ delay: 100, x: 28, y: 0 }" class="story-copy">
       <p class="eyebrow">Nossa visão</p>
       <h2>Direito não é só resposta.<br />É direção.</h2>
       <p class="large-copy">Felipe Amorim Advogados parte de uma convicção simples: um bom trabalho jurídico precisa ser tecnicamente sólido e compreensível para quem toma a decisão.</p>
@@ -49,12 +49,12 @@ const values = [
   </section>
 
   <section class="mission-section">
-    <div class="mission-copy container-wide">
+    <div v-reveal class="mission-copy container-wide">
       <p class="eyebrow">O que nos orienta</p>
       <h2>Menos formalidade vazia.<br />Mais <em>entendimento.</em></h2>
     </div>
     <div class="values-grid container-wide">
-      <article v-for="(value, index) in values" :key="value.title">
+      <article v-for="(value, index) in values" :key="value.title" v-reveal="{ delay: index * 95 }">
         <span>0{{ index + 1 }}</span>
         <component :is="value.icon" :size="30" :stroke-width="1.35" aria-hidden="true" />
         <h3>{{ value.title }}</h3>
@@ -64,11 +64,11 @@ const values = [
   </section>
 
   <section class="approach-section container-wide">
-    <div class="approach-heading">
+    <div v-reveal="{ x: -24, y: 0 }" class="approach-heading">
       <p class="eyebrow">Atendimento</p>
       <h2>Próximo quando importa.<br />Objetivo sempre.</h2>
     </div>
-    <div class="approach-content">
+    <div v-reveal="{ delay: 100, x: 24, y: 0 }" class="approach-content">
       <p>Você fala diretamente com quem analisa e conduz seu caso. A cada etapa relevante, recebe contexto suficiente para decidir com segurança.</p>
       <ul>
         <li><span>01</span> Atendimento presencial em São Paulo</li>
@@ -80,7 +80,7 @@ const values = [
   </section>
 
   <section class="page-cta">
-    <div>
+    <div v-reveal>
       <p class="eyebrow">Vamos conversar?</p>
       <h2>Entenda suas opções<br />antes de <em>decidir.</em></h2>
       <a class="button button-light" :href="whatsappUrl()" target="_blank" rel="noopener">Agendar atendimento <ArrowUpRight :size="18" /></a>

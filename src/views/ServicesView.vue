@@ -56,7 +56,7 @@ const services = [
 <template>
   <section class="inner-hero services-hero">
     <div class="inner-hero-mark" aria-hidden="true">§</div>
-    <div class="container-wide inner-hero-grid">
+    <div v-reveal class="container-wide inner-hero-grid">
       <div class="services-hero-copy">
         <p class="eyebrow">Advocacia empresarial</p>
         <h1>Conhecimento técnico.<br /><em>Estratégia aplicada.</em></h1>
@@ -66,7 +66,7 @@ const services = [
   </section>
 
   <section class="services-list container-wide">
-    <article v-for="service in services" :key="service.number" class="service-row">
+    <article v-for="(service, index) in services" :key="service.number" v-reveal="{ delay: index % 2 * 70 }" class="service-row">
       <div class="service-number">{{ service.number }}</div>
       <div class="service-title">
         <p>{{ service.subtitle }}</p>
@@ -84,28 +84,28 @@ const services = [
 
   <section class="orientation-section">
     <div class="orientation-layout container-wide">
-      <Clock3 :size="44" :stroke-width="1.1" aria-hidden="true" />
-      <div>
+      <Clock3 v-reveal :size="44" :stroke-width="1.1" aria-hidden="true" />
+      <div v-reveal="{ delay: 80 }">
         <p class="eyebrow">Existe um prazo em andamento?</p>
         <h2>Informe a data no primeiro contato.</h2>
       </div>
-      <p>Intimações, audiências e prazos contratuais podem exigir providências rápidas. Avise sobre qualquer data relevante para avaliarmos a urgência.</p>
+      <p v-reveal="{ delay: 160 }">Intimações, audiências e prazos contratuais podem exigir providências rápidas. Avise sobre qualquer data relevante para avaliarmos a urgência.</p>
     </div>
   </section>
 
   <section class="scope-section container-wide">
-    <div>
+    <div v-reveal="{ x: -24, y: 0 }">
       <p class="eyebrow">Proposta transparente</p>
       <h2>Escopo, etapas e honorários definidos antes do início.</h2>
     </div>
-    <div>
+    <div v-reveal="{ delay: 100, x: 24, y: 0 }">
       <p>Após compreender a demanda, apresentamos uma proposta com o trabalho previsto, forma de acompanhamento e investimento. Você decide com todas as informações relevantes em mãos.</p>
       <a class="button button-dark" :href="whatsappUrl('Olá! Gostaria de solicitar uma análise inicial do meu caso.')" target="_blank" rel="noopener">Solicitar análise inicial <ArrowUpRight :size="18" /></a>
     </div>
   </section>
 
   <section class="page-cta page-cta-accent">
-    <div>
+    <div v-reveal>
       <p class="eyebrow">Não encontrou sua situação?</p>
       <h2>Conte o contexto.<br />Nós indicamos o <em>caminho.</em></h2>
       <a class="button button-light" :href="whatsappUrl()" target="_blank" rel="noopener">Falar com o escritório <ArrowUpRight :size="18" /></a>

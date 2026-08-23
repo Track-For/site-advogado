@@ -55,7 +55,7 @@ const faqs = [
   <section class="photo-hero">
     <img class="photo-hero-background" src="/images/felipe-amorim-hero-v2.png" width="1536" height="1024" alt="Felipe Amorim em seu escritório" fetchpriority="high" />
     <div class="photo-hero-shade" aria-hidden="true"></div>
-    <div class="photo-hero-copy">
+    <div v-reveal="{ x: -28, y: 0 }" class="photo-hero-copy">
       <p class="eyebrow">Felipe Amorim · Advocacia Empresarial</p>
       <h1>Clareza para<br />decidir. Firmeza<br />para <em>defender.</em></h1>
       <p>Assessoria jurídica estratégica para empresas e empresários, da prevenção de riscos à condução de decisões e conflitos.</p>
@@ -64,19 +64,19 @@ const faqs = [
         <a href="#atuacao">Conheça nossa atuação <span>↓</span></a>
       </div>
     </div>
-    <div class="photo-hero-note">
+    <div v-reveal="{ delay: 220, x: 22, y: 0 }" class="photo-hero-note">
       <span>Atendimento pessoal e estratégico</span>
       <strong>Presencial · Online</strong>
     </div>
   </section>
 
   <section id="atuacao" class="intro-panel">
-    <div class="intro-heading container-wide">
+    <div v-reveal class="intro-heading container-wide">
       <p class="mini-label">Introdução</p>
       <h2>Experiência jurídica para transformar<br />complexidade em boas decisões.</h2>
     </div>
     <div class="intro-grid container-wide">
-      <article v-for="item in introItems" :key="item.title">
+      <article v-for="(item, index) in introItems" :key="item.title" v-reveal="{ delay: index * 90 }">
         <component :is="item.icon" :size="27" :stroke-width="1.45" aria-hidden="true" />
         <h3>{{ item.title }}</h3>
         <p>{{ item.text }}</p>
@@ -87,7 +87,7 @@ const faqs = [
   </section>
 
   <section class="overview-section container-wide">
-    <div class="overview-copy">
+    <div v-reveal="{ x: -26, y: 0 }" class="overview-copy">
       <p class="mini-label">Felipe Amorim Advogados</p>
       <h2>Direito que acompanha suas decisões.</h2>
       <p>Escuta atenta, estratégia e comunicação simples para que você compreenda o cenário e escolha o melhor caminho.</p>
@@ -97,18 +97,18 @@ const faqs = [
         </RouterLink>
       </div>
     </div>
-    <figure class="overview-image">
+    <figure v-reveal="{ delay: 100, x: 26, y: 0 }" class="overview-image">
       <img src="/images/felipe-amorim-hero-v2.png" width="1536" height="1024" alt="Felipe Amorim em seu escritório" loading="lazy" />
       <figcaption>Felipe Amorim · Atendimento próximo</figcaption>
     </figure>
   </section>
 
   <section class="team-feature">
-    <div class="team-feature-signature" aria-hidden="true">
+    <div v-reveal="{ x: -26, y: 0 }" class="team-feature-signature" aria-hidden="true">
       <span>FA</span>
       <small>Felipe Amorim<br />Advogados</small>
     </div>
-    <div class="team-feature-copy">
+    <div v-reveal="{ delay: 110, x: 26, y: 0 }" class="team-feature-copy">
       <p class="mini-label">Advocacia empresarial próxima</p>
       <h2>Cada caso começa com escuta.</h2>
       <p>Você fala com quem analisa e conduz sua demanda. Cada recomendação considera o impacto jurídico, operacional e financeiro para a empresa.</p>
@@ -117,14 +117,14 @@ const faqs = [
         <a :href="whatsappUrl()" target="_blank" rel="noopener" class="dark-pill">Agendar conversa</a>
       </div>
     </div>
-    <div class="team-contact-chip">
+    <div v-reveal="{ delay: 230 }" class="team-contact-chip">
       <span>FA</span>
       <p>Fale com o escritório<br /><strong>{{ siteConfig.phoneLabel }}</strong></p>
     </div>
   </section>
 
   <section class="section solutions-section">
-    <div class="solutions-heading container-wide">
+    <div v-reveal class="solutions-heading container-wide">
       <div>
         <p class="mini-label">Nossas soluções</p>
         <h2>Atuação jurídica<br />pensada para o negócio.</h2>
@@ -132,7 +132,7 @@ const faqs = [
       <p>Da estrutura societária aos contratos e conflitos, construímos respostas proporcionais ao que está em jogo.</p>
     </div>
     <div class="solutions-grid container-wide">
-      <article v-for="area in practiceAreas" :key="area.number">
+      <article v-for="(area, index) in practiceAreas" :key="area.number" v-reveal="{ delay: index * 85 }">
         <div><span>{{ area.number }}</span><component :is="area.icon" :size="24" :stroke-width="1.4" /></div>
         <h3>{{ area.title }}</h3>
         <p>{{ area.text }}</p>
@@ -142,19 +142,19 @@ const faqs = [
   </section>
 
   <section class="process-v2">
-    <div class="process-v2-heading container-wide">
+    <div v-reveal class="process-v2-heading container-wide">
       <p class="mini-label">Como trabalhamos</p>
       <h2>Clareza do primeiro contato<br />até a última decisão.</h2>
     </div>
     <ol class="process-v2-list container-wide">
-      <li v-for="principle in principles" :key="principle.number">
+      <li v-for="(principle, index) in principles" :key="principle.number" v-reveal="{ delay: index * 95 }">
         <span>{{ principle.number }}</span>
         <h3>{{ principle.title }}</h3>
         <p>{{ principle.text }}</p>
         <ArrowRight :size="20" aria-hidden="true" />
       </li>
     </ol>
-    <div class="trust-line container-wide">
+    <div v-reveal class="trust-line container-wide">
       <ShieldCheck :size="24" :stroke-width="1.4" />
       <span>Sigilo, responsabilidade e transparência em todas as etapas.</span>
     </div>
@@ -162,13 +162,13 @@ const faqs = [
 
   <section class="section faq-section faq-v2">
     <div class="faq-layout container-wide">
-      <div class="faq-intro">
+      <div v-reveal="{ x: -24, y: 0 }" class="faq-intro">
         <p class="mini-label">Perguntas frequentes</p>
         <h2>Informação também<br />traz segurança.</h2>
         <p>Respostas diretas para as principais dúvidas antes do primeiro atendimento.</p>
       </div>
       <div class="faq-list">
-        <details v-for="(faq, index) in faqs" :key="faq.q" :open="index === 0">
+        <details v-for="(faq, index) in faqs" :key="faq.q" v-reveal="{ delay: index * 70 }" :open="index === 0">
           <summary><span>{{ faq.q }}</span><b aria-hidden="true">+</b></summary>
           <p>{{ faq.a }}</p>
         </details>
@@ -178,7 +178,7 @@ const faqs = [
 
   <section id="contato" class="contact-section contact-v2">
     <div class="contact-layout container-wide">
-      <div class="contact-intro">
+      <div v-reveal="{ x: -24, y: 0 }" class="contact-intro">
         <p class="mini-label">Fale com o escritório</p>
         <h2>Seu próximo passo começa com uma conversa.</h2>
         <p>Conte brevemente o que está acontecendo. O escritório retornará para orientar as próximas etapas.</p>
@@ -187,7 +187,7 @@ const faqs = [
           <span>Formato</span><strong>{{ siteConfig.location }}</strong>
         </div>
       </div>
-      <ContactForm />
+      <ContactForm v-reveal="{ delay: 110, x: 24, y: 0 }" />
     </div>
   </section>
 </template>

@@ -4,10 +4,10 @@ import { useHead } from '@unhead/vue';
 import { siteConfig, whatsappUrl } from '../data/site';
 
 useHead({
-  title: 'O Escritório | Almeida & Prado Advocacia',
+  title: 'Felipe Amorim | Felipe Amorim Advogados',
   meta: [
-    { name: 'description', content: 'Conheça a forma de atuação do Almeida & Prado: advocacia próxima, estratégica e comprometida com decisões claras.' },
-    { property: 'og:title', content: 'O Escritório | Almeida & Prado Advocacia' },
+    { name: 'description', content: 'Conheça a forma de atuação de Felipe Amorim: advocacia próxima, estratégica e comprometida com decisões claras.' },
+    { property: 'og:title', content: 'Felipe Amorim | Advogados' },
     { property: 'og:description', content: 'Estratégia jurídica com escuta, clareza e responsabilidade.' },
     { property: 'og:url', content: `${siteConfig.domain}/sobre` },
   ],
@@ -23,7 +23,7 @@ const values = [
 
 <template>
   <section class="inner-hero about-hero">
-    <div class="inner-hero-mark" aria-hidden="true">AP</div>
+    <div class="inner-hero-mark" aria-hidden="true">FA</div>
     <div class="container-wide inner-hero-grid">
       <div>
         <p class="eyebrow">O escritório</p>
@@ -36,13 +36,13 @@ const values = [
   <section class="story-section container-wide">
     <div class="story-seal" aria-hidden="true">
       <Scale :size="64" :stroke-width="1" />
-      <strong>A&P</strong>
-      <span>Advocacia estratégica</span>
+      <strong>FA</strong>
+      <span>Felipe Amorim Advogados</span>
     </div>
     <div class="story-copy">
       <p class="eyebrow">Nossa visão</p>
       <h2>Direito não é só resposta.<br />É direção.</h2>
-      <p class="large-copy">O Almeida & Prado nasceu de uma convicção simples: um bom trabalho jurídico precisa ser tecnicamente sólido e compreensível para quem toma a decisão.</p>
+      <p class="large-copy">Felipe Amorim Advogados parte de uma convicção simples: um bom trabalho jurídico precisa ser tecnicamente sólido e compreensível para quem toma a decisão.</p>
       <p>Por isso, começamos pela escuta. Antes de apontar caminhos, entendemos relações, prioridades, prazos e riscos. A estratégia surge desse contexto — não de uma fórmula.</p>
       <p>Atuamos de forma consultiva e contenciosa, acompanhando pessoas, famílias e empresas em decisões que exigem segurança, discrição e visão de longo prazo.</p>
     </div>

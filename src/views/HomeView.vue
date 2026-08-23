@@ -14,18 +14,18 @@ import ContactForm from '../components/ContactForm.vue';
 import { siteConfig, whatsappUrl } from '../data/site';
 
 useHead({
-  title: 'Almeida & Prado Advocacia | Estratégia jurídica com clareza',
+  title: 'Felipe Amorim Advogados | Clareza para decidir',
   meta: [
-    { name: 'description', content: 'Advocacia estratégica em direito empresarial, contratos, direito civil, família e sucessões. Atendimento próximo, claro e responsável.' },
-    { property: 'og:title', content: 'Almeida & Prado | Advocacia estratégica' },
-    { property: 'og:description', content: 'Orientação jurídica clara para proteger seu patrimônio, sua empresa e seus próximos passos.' },
+    { name: 'description', content: 'Atuação jurídica estratégica em direito empresarial, contratos, direito civil, família e sucessões, com atendimento próximo e responsável.' },
+    { property: 'og:title', content: 'Felipe Amorim Advogados' },
+    { property: 'og:description', content: 'Clareza para decidir. Firmeza para defender.' },
     { property: 'og:url', content: siteConfig.domain },
   ],
   link: [{ rel: 'canonical', href: siteConfig.domain }],
 });
 
 const introItems = [
-  { icon: Scale, title: 'O escritório', text: 'Conheça a visão e a forma de trabalhar do Almeida & Prado.', link: '/sobre', label: 'Nossa história' },
+  { icon: Scale, title: 'Felipe Amorim', text: 'Conheça a visão e a forma de conduzir cada caso com presença e estratégia.', link: '/sobre', label: 'Conheça o escritório' },
   { icon: BriefcaseBusiness, title: 'Áreas de atuação', text: 'Soluções jurídicas para pessoas, famílias e empresas.', link: '/servicos', label: 'Ver serviços' },
   { icon: UsersRound, title: 'Fale conosco', text: 'Conte seu contexto e receba orientação sobre o próximo passo.', link: '#contato', label: 'Iniciar conversa' },
 ];
@@ -53,20 +53,20 @@ const faqs = [
 
 <template>
   <section class="photo-hero">
-    <img src="/images/lawyer-hero-v2.png" width="1536" height="1024" alt="Advogado em um escritório contemporâneo" fetchpriority="high" />
+    <img src="/images/felipe-amorim-hero.png" width="1536" height="1024" alt="Felipe Amorim em seu escritório" fetchpriority="high" />
     <div class="photo-hero-shade" aria-hidden="true"></div>
     <div class="photo-hero-copy">
-      <p class="eyebrow">Almeida & Prado · Advocacia estratégica</p>
-      <h1>Ajudamos você<br />a decidir com<br /><em>segurança.</em></h1>
-      <p>Estratégia jurídica clara para proteger relações, patrimônio e negócios — com proximidade em cada etapa.</p>
+      <p class="eyebrow">Felipe Amorim · Advogados</p>
+      <h1>Clareza para<br />decidir. Firmeza<br />para <em>defender.</em></h1>
+      <p>Atuação jurídica estratégica, próxima e responsável para proteger o que importa e construir caminhos seguros.</p>
       <div class="photo-hero-actions">
         <a class="button button-light" :href="whatsappUrl()" target="_blank" rel="noopener">Agendar uma conversa <ArrowUpRight :size="17" /></a>
         <a href="#atuacao">Conheça nossa atuação <span>↓</span></a>
       </div>
     </div>
     <div class="photo-hero-note">
-      <span>Atendimento presencial e online</span>
-      <strong>São Paulo · Todo o Brasil</strong>
+      <span>Atendimento pessoal e estratégico</span>
+      <strong>Presencial · Online</strong>
     </div>
   </section>
 
@@ -88,9 +88,9 @@ const faqs = [
 
   <section class="overview-section container-wide">
     <div class="overview-copy">
-      <p class="mini-label">Almeida & Prado</p>
-      <h2>Direito que acompanha seus planos.</h2>
-      <p>Unimos rigor técnico, visão de negócio e comunicação simples para que você entenda o cenário e escolha o melhor caminho.</p>
+      <p class="mini-label">Felipe Amorim Advogados</p>
+      <h2>Direito que acompanha suas decisões.</h2>
+      <p>Escuta atenta, estratégia e comunicação simples para que você compreenda o cenário e escolha o melhor caminho.</p>
       <div class="overview-links">
         <RouterLink v-for="area in practiceAreas" :key="area.number" to="/servicos">
           <span>{{ area.title }}</span><b>+</b>
@@ -98,27 +98,28 @@ const faqs = [
       </div>
     </div>
     <figure class="overview-image">
-      <img src="/images/lawyer-hero-v2.png" width="1536" height="1024" alt="Profissional do Almeida & Prado em atendimento" loading="lazy" />
-      <figcaption>Estratégia jurídica · Atendimento próximo</figcaption>
+      <img src="/images/felipe-amorim-hero.png" width="1536" height="1024" alt="Felipe Amorim em seu escritório" loading="lazy" />
+      <figcaption>Felipe Amorim · Atendimento próximo</figcaption>
     </figure>
   </section>
 
   <section class="team-feature">
-    <div class="team-feature-image">
-      <img src="/images/legal-team-v2.png" width="1536" height="1024" alt="Equipe jurídica reunida em um escritório" loading="lazy" />
+    <div class="team-feature-signature" aria-hidden="true">
+      <span>FA</span>
+      <small>Felipe Amorim<br />Advogados</small>
     </div>
     <div class="team-feature-copy">
-      <p class="mini-label">Uma advocacia diferente</p>
-      <h2>Não somos apenas mais um escritório.</h2>
-      <p>Você fala com quem analisa e conduz seu caso. Cada recomendação considera o impacto jurídico, humano e financeiro da decisão.</p>
+      <p class="mini-label">Presença em cada etapa</p>
+      <h2>Cada caso começa com escuta.</h2>
+      <p>Você fala com quem analisa e conduz sua demanda. Cada recomendação considera o impacto jurídico, humano e financeiro da decisão.</p>
       <div class="team-feature-actions">
         <RouterLink to="/sobre" class="soft-button">Conheça o escritório</RouterLink>
         <a :href="whatsappUrl()" target="_blank" rel="noopener" class="dark-pill">Agendar conversa</a>
       </div>
     </div>
     <div class="team-contact-chip">
-      <span>A&P</span>
-      <p>Fale com nossa equipe<br /><strong>{{ siteConfig.phoneLabel }}</strong></p>
+      <span>FA</span>
+      <p>Fale com o escritório<br /><strong>{{ siteConfig.phoneLabel }}</strong></p>
     </div>
   </section>
 
@@ -180,7 +181,7 @@ const faqs = [
       <div class="contact-intro">
         <p class="mini-label">Fale com o escritório</p>
         <h2>Seu próximo passo começa com uma conversa.</h2>
-        <p>Conte brevemente o que está acontecendo. Retornaremos em até 1 dia útil para orientar as próximas etapas.</p>
+        <p>Conte brevemente o que está acontecendo. O escritório retornará para orientar as próximas etapas.</p>
         <div class="contact-meta">
           <span>Atendimento</span><strong>Segunda a sexta · 9h às 18h</strong>
           <span>Formato</span><strong>{{ siteConfig.location }}</strong>

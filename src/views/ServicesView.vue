@@ -4,10 +4,10 @@ import { useHead } from '@unhead/vue';
 import { siteConfig, whatsappUrl } from '../data/site';
 
 useHead({
-  title: 'Áreas de Atuação | Almeida & Prado Advocacia',
+  title: 'Áreas de Atuação | Felipe Amorim Advogados',
   meta: [
-    { name: 'description', content: 'Conheça a atuação do Almeida & Prado em direito empresarial, contratos, direito civil, família, sucessões e consultoria preventiva.' },
-    { property: 'og:title', content: 'Áreas de Atuação | Almeida & Prado Advocacia' },
+    { name: 'description', content: 'Conheça a atuação de Felipe Amorim em direito empresarial, contratos, direito civil, família, sucessões e consultoria preventiva.' },
+    { property: 'og:title', content: 'Áreas de Atuação | Felipe Amorim Advogados' },
     { property: 'og:description', content: 'Assessoria jurídica para empresas, pessoas e famílias com estratégia sob medida.' },
     { property: 'og:url', content: `${siteConfig.domain}/servicos` },
   ],
